@@ -32,6 +32,20 @@
             grid-column: span 1;
             grid-row: span 1;
         }
+
+        /* responsive */
+        @media screen and (max-width: 576px) {
+            .continer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: repeat(6, 150px); */
+            }
+
+            .big-layout, .normal-layout, .wide-layout, .small-layout {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
     </style>
 </head>
 <body>
